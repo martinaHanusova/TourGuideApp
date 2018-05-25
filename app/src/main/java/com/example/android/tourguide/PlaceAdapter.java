@@ -81,10 +81,10 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
             public void onClick(View v) {
                 double latitude = place.getLatitude();
                 double longitude = place.getLongitude();
-                String uri = String.format(Locale.ENGLISH, "google.navigation:q= %f, %f", latitude, longitude);
+                String uri = String.format(Locale.ENGLISH, getContext().getResources().getString(R.string.google_navigation_uri), latitude, longitude);
                 Uri gmmIntentUri = Uri.parse(uri);
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                mapIntent.setPackage("com.google.android.apps.maps");
+                mapIntent.setPackage(getContext().getResources().getString(R.string.package_name_google_maps));
                 getContext().startActivity(mapIntent);
             }
         });

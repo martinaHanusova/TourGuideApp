@@ -19,14 +19,14 @@ public class PlaceFragment extends android.support.v4.app.Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_view, null);
 
-        model = new Model();
+        model = new Model(getContext());
         ArrayList<Place> data;
         Bundle bundle = this.getArguments();
         if (bundle != null) {
-            String key = bundle.getString("navId");
-            if (key == "restaurants") {
+            String key = bundle.getString(getContext().getResources().getString(R.string.key_name_navId));
+            if (key == getContext().getResources().getString(R.string.place_type_restaurants)) {
                 data = model.getRestaurants();
-            } else if (key == "hotels") {
+            } else if (key == getContext().getResources().getString(R.string.place_type_hotels)) {
                 data = model.getHotels();
             } else {
                 data = model.getPlaces();

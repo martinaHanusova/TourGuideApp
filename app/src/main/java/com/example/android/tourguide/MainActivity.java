@@ -61,11 +61,11 @@ public class MainActivity extends AppCompatActivity
         } else {
                 fragment = new PlaceFragment();
                 if (id == R.id.nav_restaurant) {
-                    bundle.putString("navId", "restaurants");
+                    bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_restaurants));
                 } else if (id == R.id.nav_hotels) {
-                    bundle.putString("navId", "hotels");
+                    bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_hotels));
                 } else if (id == R.id.nav_places) {
-                    bundle.putString("navId", "places");
+                    bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_places));
                 }
                 fragment.setArguments(bundle);
             }
