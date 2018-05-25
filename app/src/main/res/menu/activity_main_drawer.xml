@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/ic_menu_info"
+            android:title="Základní informace" />
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/ic_menu_restaurant"
+            android:title="Restaurace" />
+        <item
+            android:id="@+id/nav_hotels"
+            android:icon="@drawable/ic_menu_hotel"
+            android:title="Hotely" />
+        <item
+            android:id="@+id/nav_places"
+            android:icon="@drawable/ic_menu_place"
+            android:title="Zajímavá místa" />
+    </group>
+</menu>

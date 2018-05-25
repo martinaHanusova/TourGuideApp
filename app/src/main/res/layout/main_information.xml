@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/place_image_height">
+
+        <ImageView
+            android:id="@+id/bystrc_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/place_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bystrc"/>
+
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large_text_size"
+            android:text="@string/district_bystrc_name"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/row_margin"
+        android:textSize="@dimen/text_size_normal"
+        android:text="@string/district_Bystrc_info"/>
+</LinearLayout>
+    </ScrollView>
