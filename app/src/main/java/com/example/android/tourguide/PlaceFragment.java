@@ -28,6 +28,8 @@ public class PlaceFragment extends android.support.v4.app.Fragment {
                 data = model.getRestaurants();
             } else if (key == getContext().getResources().getString(R.string.place_type_hotels)) {
                 data = model.getHotels();
+            } else if (key == getContext().getResources().getString(R.string.place_type_shops)) {
+                data = model.getShops();
             } else {
                 data = model.getPlaces();
             }

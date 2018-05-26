@@ -63,4 +63,11 @@
     <string name="place_type_places">places</string>
     <string name="google_navigation_uri">google.navigation:q= %f, %f</string>
     <string name="package_name_google_maps">com.google.android.apps.maps</string>
+    <string name="place_type_shops">shops</string>
+    <string name="shop_name_vebafood">VebaFood</string>
+    <string name="shop_name_sklizeno">Sklizeno</string>
+    <string name="shop_address_vebafood">Kachlíkova 887/9</string>
+    <string name="shop_address_sklizeno">Říčanská 970/23</string>
+    <string name="shop_web_vebafood">vebafood.cz</string>
+    <string name="shop_web_sklizeno">www.sklizeno.cz</string>
 </resources>

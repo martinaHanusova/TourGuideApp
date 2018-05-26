@@ -57,6 +57,15 @@ public class Place {
         this.text = text;
     }
 
+    public Place(int imageId, String name, String address, double latitude, double longitude, String url) {
+        this.imageId = imageId;
+        this.name = name;
+        this.address = address;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.url = url;
+    }
+
 
     public int getImageId() {
         return imageId;

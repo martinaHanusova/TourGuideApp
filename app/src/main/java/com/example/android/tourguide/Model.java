@@ -11,11 +11,13 @@ public class Model {
     private ArrayList<Place> restaurants;
     private ArrayList<Place> hotels;
     private ArrayList<Place> places;
+    private ArrayList<Place> shops;
 
     public Model(Context context) {
         restaurants = new ArrayList<>();
         hotels = new ArrayList<>();
         places = new ArrayList<>();
+        shops = new ArrayList<>();
         restaurants.add(new Restaurant(R.drawable.don_papa, context.getResources().getString(R.string.restaurant_name_don_papa), context.getString(R.string.restaurant_address_don_papa), 49.223138, 16.514083, context.getString(R.string.restaurant_phone_don_papa), context.getString(R.string.restaurant_web_don_papa)));
         restaurants.add(new Restaurant(R.drawable.akat, context.getString(R.string.restaurant_name_akat), context.getString(R.string.restaurant_address_akat), 49.221185, 16.5178, context.getString(R.string.restaurant_phone_akat), context.getString(R.string.restaurant_web_akat)));
         restaurants.add(new Restaurant(R.drawable.la_corrida, context.getString(R.string.restaurant_name_la_corrida), context.getString(R.string.restaurant_address_corrida), 49.225636, 16.530275, context.getString(R.string.restaurant_phone_corrida), context.getString(R.string.restaurant_web_corrida)));
@@ -29,6 +31,9 @@ public class Model {
         places.add(new Place(context.getString(R.string.place_text_prehrada), R.drawable.prehrada, context.getString(R.string.place_name_prehrada), context.getString(R.string.place_adress_prehrada), 49.244702, 16.509320, context.getString(R.string.place_web_prehrada)));
         places.add(new Place(context.getString(R.string.place_text_hraz), R.drawable.prehrada_hraz, context.getString(R.string.place_name_hraz), context.getString(R.string.place_adress_hraz), 49.232551, 16.519160));
         places.add(new Place(context.getString(R.string.place_text_zoo), R.drawable.zoo_brno, context.getString(R.string.place_name_zoo), context.getString(R.string.place_adress_zoo), 49.230354, 16.533397, context.getString(R.string.place_web_zoo)));
+        shops.add(new Shop(R.drawable.vebafood, context.getString(R.string.shop_name_vebafood), context.getString(R.string.shop_address_vebafood), 49.221386, 16.515810, context.getString(R.string.shop_web_vebafood)));
+        shops.add(new Shop(R.drawable.sklizeno, context.getString(R.string.shop_name_sklizeno), context.getString(R.string.shop_address_sklizeno), 49.218003, 16.498086, context.getString(R.string.shop_web_sklizeno)));
+
     }
     public ArrayList<Place> getRestaurants() {
         return restaurants;
@@ -40,5 +45,9 @@ public class Model {
 
     public ArrayList<Place> getPlaces() {
         return places;
+    }
+
+    public ArrayList<Place> getShops() {
+        return shops;
     }
 }
