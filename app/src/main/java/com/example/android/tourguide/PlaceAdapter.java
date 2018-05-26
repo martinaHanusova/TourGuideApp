@@ -30,11 +30,11 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.item_place, parent, false);
         }
-        Place currentPlace  = getItem(position);
+        Place currentPlace = getItem(position);
 
         setPlaceImage(currentPlace, listItemView);
         setPlaceName(currentPlace, listItemView);

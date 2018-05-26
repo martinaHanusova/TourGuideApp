@@ -1,7 +1,6 @@
 package com.example.android.tourguide;
 
 
-
 import android.content.Context;
 
 import java.util.ArrayList;
@@ -35,6 +34,7 @@ public class Model {
         shops.add(new Shop(R.drawable.sklizeno, context.getString(R.string.shop_name_sklizeno), context.getString(R.string.shop_address_sklizeno), 49.218003, 16.498086, context.getString(R.string.shop_web_sklizeno)));
 
     }
+
     public ArrayList<Place> getRestaurants() {
         return restaurants;
     }

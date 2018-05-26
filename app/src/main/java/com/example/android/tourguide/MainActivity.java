@@ -58,20 +58,20 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_information) {
             fragment = new MainInformationFragment();
         } else {
-                fragment = new PlaceFragment();
-                if (id == R.id.nav_restaurant) {
-                    bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_restaurants));
-                } else if (id == R.id.nav_hotels) {
-                    bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_hotels));
-                } else if (id == R.id.nav_shops) {
-                    bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_shops));
-                } else if (id == R.id.nav_places) {
-                    bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_places));
-                }
-                fragment.setArguments(bundle);
+            fragment = new PlaceFragment();
+            if (id == R.id.nav_restaurant) {
+                bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_restaurants));
+            } else if (id == R.id.nav_hotels) {
+                bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_hotels));
+            } else if (id == R.id.nav_shops) {
+                bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_shops));
+            } else if (id == R.id.nav_places) {
+                bundle.putString(getString(R.string.key_name_navId), getString(R.string.place_type_places));
             }
+            fragment.setArguments(bundle);
+        }
 
-        if(fragment != null) {
+        if (fragment != null) {
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction()
                     .replace(R.id.content_area, fragment)
